@@ -1,0 +1,31 @@
+@import "./variable.scss";
+@import "./header.scss";
+@import "./about.scss";
+@import "./card.scss";
+@import "./footer.scss";
+
+*,
+*::before,
+*::after{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+ul,li{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  font-family: 'Montserrat Alternates', sans-serif;
+  color: $amino;
+  background: $shioKoji;
+}
+
+.container{
+  max-width: 1200px;
+  margin: 0 auto;
+}

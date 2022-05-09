@@ -1,0 +1,21 @@
+.about{
+    background: rgba(113, 150, 84, 0.485);
+    &__title{
+        padding-top: 50px;
+        font-size: 50px;
+        font-weight: 700;
+        
+    }
+    &__content{
+        display: flex;
+        padding: 50px 0;
+        & img{
+            width: 50%;
+        }
+        & p{
+            font-size: 20px;
+            line-height: 26px;
+        }
+    }
+    
+}

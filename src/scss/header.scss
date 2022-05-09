@@ -1,0 +1,66 @@
+.header{
+    background-image: url(../img/bg-2.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: relative;
+    &__nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid $shioKoji;
+        padding: 0 15px;
+        position: fixed;
+        width: 100%;
+        background: white;
+        z-index: 2;
+    }
+    &__list{
+        display: flex;
+    }
+    &__link-logo{
+        padding-right: 80px;
+    }
+    &__item{
+        background-image: linear-gradient(
+            transparent 0%,
+            transparent 90%,
+            black 0%,
+            black 100%,
+        );
+        background-repeat: no-repeat;
+        background-size:  0 100%;
+        background-position-x: left;
+        transition: background-size 300ms;
+        &:hover{
+            color: black;
+            background-size: 100% 100%;
+            background-position-x: left;
+        }
+        &:not(:last-child){
+            margin-right: 30px;
+        }
+    }
+   
+    &__button{
+        background: transparent;
+        border: none;
+        position: absolute;
+        top: 80%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border: 1px solid $amino;
+        font-size: 22px;
+        line-height: 28px;
+        font-weight: 300;
+        padding: 5px 30px;
+        border-radius: 15px;
+        &:hover{
+            
+            box-shadow: 0 0 50px $miso,
+            0 0 150px $shioKoji;
+            transition: box-shadow 300ms;
+        }
+    }
+}

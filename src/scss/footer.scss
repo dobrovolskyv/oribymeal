@@ -1,0 +1,47 @@
+.footer{
+    
+    background: $miso;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: relative;
+    &__inner{
+        padding: 15px 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    &__socials{
+        margin-top: 30px;
+        display: flex;
+        align-items: center;
+        &_link{
+            margin-right: 10px;
+            & svg:hover{
+               fill: black;
+               
+            }
+        }
+       
+    }
+   &__img{
+       position: absolute;
+       top: 0;
+       left: 0;
+       width: 8%;
+
+   }
+    &__list{
+        display: flex;
+    }
+    &__item{
+        margin-right: 30px;
+        
+        &:hover{
+            color: black;
+            
+        }
+    }
+    
+}
