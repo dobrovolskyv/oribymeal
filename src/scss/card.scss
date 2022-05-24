@@ -1,10 +1,13 @@
 .card{
+    padding: $paddingSaction;
+    position: relative;
     &__item{
-        margin: 100px 0;
+        margin: 50px 0;
     width: 350px;
     height: 400px;
     font-size: 20px;
     background: white; 
+    overflow: hidden;
     }
    
     &__inner{
@@ -13,7 +16,7 @@
         flex-direction: column;
         align-items: center;
         flex: 1;
-       overflow: hidden;
+       
     }
     &__view{
         
@@ -22,7 +25,7 @@
         width: 100%;
     }
     &__name{
-        margin: 30px 0;
+        margin: 30px 0 10px;
     }
 }
 
@@ -33,4 +36,77 @@
     align-items: center;
     flex-wrap: wrap;
     gap: 10px;
+}
+
+.popup{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.8);
+    top: 50px;
+    right: 0;
+    opacity: 0;
+    visibility: hidden;
+    font-size: 16px;
+    text-align: center;
+    transform: perspective(300), translateY(-50%);
+    & img{
+        width: 80%;
+        
+        
+    }
+    &:target{
+        opacity: 1;
+        visibility: visible;
+        transition: all 300ms linear;
+        transform: perspective(0), translateY(0);
+    }
+    &__body{
+        min-height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 30px 10px;
+    }
+    &__content{
+        background-color: white;
+        max-width: 650px;
+        padding: 30px;
+        position: relative;
+    }
+    &__title{
+        font-style: 40px;
+        font-weight: 600;
+        margin: 0px 0px 1em 0px;
+    }
+    &__close{
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        font-size: 20px;
+    }
+    &-link{
+        font-size: 16px;
+        margin-top: 30px;
+        text-decoration: underline;
+    }
+    &__text {
+        text-align: left;
+        & ul>li{
+            margin-top: 10px;
+        }
+    }
+    &__button {
+        font-size: 14px;
+        padding: 5px 10px;
+    }
+}
+.items__control{
+    cursor: pointer;
+}
+.counter-wrapper{
+    display: flex;
+    & div{
+        margin-right: 10px;
+    }
 }

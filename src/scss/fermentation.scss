@@ -1,0 +1,13 @@
+.fermentation{
+    padding: $paddingSaction;
+    &__inner{
+        
+    }
+    &__item{
+        font-size: $mainSize;
+        margin-top: 15px;
+    }
+    & img{
+        width: 80%;
+    }
+}

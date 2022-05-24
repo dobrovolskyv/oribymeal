@@ -1,81 +1,108 @@
 <section class="card">
     <div class="container">
+        <h1 class="card__title title"> Магазин</h1>
         <div class="cardlist">
-    
-            <div class="card__item">
+            <div class="card__item" data-id="01">
                 <div class="card__inner">
                     <img class="card__img" src="../img/tomato.jpg" alt="" />
-                    <p class="card__view">Быстрый просмотр</p>
-                    <div class="card__view"></div>
-                    <h3 class="card__name">Названия товара</h3>
+                    <h3 class="card__name">Мисо хлеб </h3>
                     <p class="card__price">24 руб</p>
-                    
+                    <div class="details-wrapper">
+                        <div class="items counter-wrapper">
+                            <div class="items__control" data-action="minus">-</div>
+                            <div class="items__current" data-counter>1</div>
+                            <div class="items__control" data-action="plus">+</div>
+                            <div class="price">
+                                <p class="price__currency"> 100</p>
+                            </div>
+                        </div>
+                        <a href="#popup" class="card__phone popup-link">Подробнее</a>
+                    </div>
+                </div>
+                <button class="popup__button" data-cart type="button">Добавить в корзину </button>
+            </div>
+            <div class="card__item" data-id="02">
+                <div class="card__inner">
+                    <img class="card__img" src="../img/tomato.jpg" alt="" />
+                    <h3 class="card__name">Мисо греча баклажан </h3>
+                    <p class="card__price">24 руб</p>
+                    <div class="details-wrapper">
+                        <div class="items counter-wrapper">
+                            <div class="items__control" data-action="minus">-</div>
+                            <div class="items__current" data-counter>1</div>
+                            <div class="items__control" data-action="plus">+</div>
+                        </div>
+                        <div class="price">
+                            <p class="price__currency">200</p>
+                        </div>
+                        <button class="popup__button" data-cart type="button">Добавить в корзину </button>
+                    </div>
+                    <a href="#popup" class="card__phone popup-link">Подробнее</a>
                 </div>
             </div>
-            <div class="card__item">
+            <div class="card__item" data-id="03">
                 <div class="card__inner">
                     <img class="card__img" src="../img/tomato.jpg" alt="" />
-                    <h3 class="card__name">Названия товара</h3>
+                    <h3 class="card__name">Шрирача </h3>
                     <p class="card__price">24 руб</p>
+                    <div class="details-wrapper">
+                        <div class="items counter-wrapper">
+                            <div class="items__control" data-action="minus">-</div>
+                            <div class="items__current" data-counter>1</div>
+                            <div class="items__control" data-action="plus">+</div>
+                        </div>
+                        <div class="price">
+                            <p class="price__currency">300</p>
+                        </div>
+                        <button class="popup__button" data-cart type="button">Добавить в корзину </button>
+                    </div>
+                    <a href="#popup" class="card__phone popup-link">Подробнее</a>
                 </div>
             </div>
-            <div class="card__item">
-                <div class="card__inner">
-                    <img class="card__img" src="../img/tomato.jpg" alt="" />
-                    <h3 class="card__name">Названия товара</h3>
-                    <p class="card__price">24 руб</p>
-                </div>
+        </div>
+        <div class="basket">
+            <div class="basket__wrapper">
+                <div data-cart-empty class="alert" role="alert"><p>basket is empty</p></div>
             </div>
-            <div class="card__item">
-                <div class="card__inner">
-                    <img class="card__img" src="../img/tomato.jpg" alt="" />
-                    <h3 class="card__name">Названия товара</h3>
-                    <p class="card__price">24 руб</p>
-                </div>
+            <div class="cart-total">
+                <p data-cart-delivery >Итого <span class="total__price">0</span></p>
             </div>
-            <div class="card__item">
-                <div class="card__inner">
-                    <img class="card__img" src="../img/tomato.jpg" alt="" />
-                    <h3 class="card__name">Названия товара</h3>
-                    <p class="card__price">24 руб</p>
-                </div>
+            <div id="order-form" class="card-body none">                
+              <h3>оформит заказ</h3>
+            <button>заказать</button>  
             </div>
-            <div class="card__item">
-                <div class="card__inner">
-                    <img class="card__img" src="../img/tomato.jpg" alt="" />
-                    <p class="card__view">Быстрый просмотр</p>
-                    <div class="card__view"></div>
-                    <h3 class="card__name">Названия товара</h3>
-                    <p class="card__price">24 руб</p>
-                    
-                </div>
-            </div>
-            <div class="card__item">
-                <div class="card__inner">
-                    <img class="card__img" src="../img/tomato.jpg" alt="" />
-                    <h3 class="card__name">Названия товара</h3>
-                    <p class="card__price">24 руб</p>
-                </div>
-            </div>
-            <div class="card__item">
-                <div class="card__inner">
-                    <img class="card__img" src="../img/tomato.jpg" alt="" />
-                    <h3 class="card__name">Названия товара</h3>
-                    <p class="card__price">24 руб</p>
-                </div>
-            </div>
-            <div class="card__item">
-                <div class="card__inner">
-                    <img class="card__img" src="../img/tomato.jpg" alt="" />
-                    <h3 class="card__name">Названия товара</h3>
-                    <p class="card__price">24 руб</p>
-                </div>
-            </div>
-            <div class="card__item">
-                <div class="card__inner">
-                    <img class="card__img" src="../img/tomato.jpg" alt="" />
-                    <h3 class="card__name">Названия товара</h3>
-                    <p class="card__price">24 руб</p>
+        </div>
+        <div id="popup" class="popup">
+            <div class="popup__body">
+                <div class="popup__content">
+                    <a href="#header" class="popup__close">X</a>
+                    <div class="popup__title">Мисо хлеб</div>
+                    <img src="../img/tomato.jpg" alt="">
+                    <div class="popup__text">
+                        <ul>
+                            <li>Насыщенная ферментированная паста из гречи и баклажанов с добавлением органической
+                                плесневой культуры Aspergillus Oryzae </li>
+                            <li>Состав: греча, баклажан, вода, соль, органическая культура Aspergillus Oryzae </li>
+                            <li>Мисо греча баклажан ферментируется с помощью плесневых грибков в течение нескольких
+                                месяцев. Результатом является приятный сбалансированный вкус знакомых продуктов, с
+                                очень
+                                глубоким и насыщенным послевкусием.
+                                Рекомендуем использовать в супах, соусах, горячих блюдах и закусках. </li>
+                        </ul>
+                        <!-- счетчик -->
+                        <div class="details-wrapper">
+                            <div class="items counter-wrapper">
+                                <div class="items__control" data-action="minus">-</div>
+                                <div class="items__current" data-counter>1</div>
+                                <div class="items__control" data-action="plus">+</div>
+                            </div>
+                            <div class="price">
+                                <p class="price__currency"> 300</p>
+                            </div>
+                            <button class="popup__button">Добавить в корзину </button>
+                        </div>
+
+                    </div>
                 </div>
             </div>
         </div>

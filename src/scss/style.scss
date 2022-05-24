@@ -1,7 +1,9 @@
 @import "./variable.scss";
 @import "./header.scss";
 @import "./about.scss";
+@import "./fermentation.scss";
 @import "./card.scss";
+@import "./contacts.scss";
 @import "./footer.scss";
 
 *,
@@ -23,9 +25,19 @@ body {
   font-family: 'Montserrat Alternates', sans-serif;
   color: $amino;
   background: $shioKoji;
+  scroll-behavior: smooth;
+  font-size: $mainSize;
 }
 
 .container{
   max-width: 1200px;
   margin: 0 auto;
+}
+
+
+.title{
+  font-size: 40px;
+  line-height: 46px;
+  font-weight: 500; 
+  // padding: $paddingTitlte;
 }
